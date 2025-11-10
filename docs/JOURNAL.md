@@ -27,3 +27,7 @@ Voici les fonctionnalités principales attendues :
 - 3 pages (Accueil, Evènements, Actualités) 
 - Navigation sticky
 - Liens externes précisant les infos
+
+Création de la maquette:
+![maquette_dijtech](https://github.com/user-attachments/assets/2a668df4-8b8e-477a-8746-64b1b9e715b2)
+
