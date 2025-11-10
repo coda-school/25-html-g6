@@ -1,0 +1,41 @@
+body {
+    background-color: #E9ECEA;
+    color: #1F2421;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #2B655B;
+    color: #E9ECEA;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 30%;
+    padding: 1%;
+}
+
+#navbar a:hover {
+    background-color: #204645;
+}
+
+#navbar a:active {
+    background-color: #BCD3C0;
+    color: #1F2421;
+}
+
+a {
+    color: #E9ECEA;
+}
+
+footer {
+    background-color: #2B655B;
+    text-align: center;
+    color: #E9ECEA;
+    padding: 1%;
+}
