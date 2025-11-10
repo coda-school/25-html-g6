@@ -16,14 +16,14 @@ Des exemples de code.
 
 ## Lundi 10 novembre
 
-Le groupe est composé de
+Le groupe est composé de:
 - Lucie
 - Florian
 - Véréna
 
 Nous avons choisi un sujet que nous avons proposé "Magazine Tech local"
 
-Voici les fonctionnalités principales attendues :
+Voici les fonctionnalités principales attendues:
 - 3 pages (Accueil, Evènements, Actualités) 
 - Navigation sticky
 - Liens externes précisant les infos
@@ -31,7 +31,8 @@ Voici les fonctionnalités principales attendues :
 Création de la maquette:
 ![maquette_dijtech](https://github.com/user-attachments/assets/2a668df4-8b8e-477a-8746-64b1b9e715b2)
 
-Charte graphique -
+
+Charte graphique:
 
 Couleur de fond : #DCE1DE
 Couleur évènement : #9CC5A1
@@ -39,4 +40,3 @@ Couleur actus : #49A078
 Couleur accueil : #358471
 Couleur principale : #2B655B
 Couleur écriture : #1F2421 - #E9ECEA
-
