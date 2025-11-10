@@ -10,13 +10,11 @@ Ce qui a été fait, ce qu'il reste à faire.
 
 Des photos ou copies de vos prototypes.
 
-Des exmples de code.
+Des exemples de code.
 
 -->
 
 ## Lundi 10 novembre
-
-<!--
 
 Le groupe est composé de
 - Lucie
@@ -29,6 +27,3 @@ Voici les fonctionnalités principales attendues :
 - 3 pages
 - Navigation sticky
 - Liens externes précisant les infos
-
-...
--->
