@@ -24,6 +24,6 @@ Le groupe est composé de
 Nous avons choisi un sujet que nous avons proposé "Magazine Tech local"
 
 Voici les fonctionnalités principales attendues :
-- 3 pages
+- 3 pages (Accueil, Evènements, Actualités) 
 - Navigation sticky
 - Liens externes précisant les infos
