@@ -79,9 +79,9 @@ Chaque groupe peut choisir un certain nombre **d'exigences complémentaires** en
 
 Elles doivent être reportées ci-dessous.
 
-### Exigence 1
+### Version bilingue
 
-### Exigence 2
+### Navigation sticky et burger menu pour mobile sans javascript
 
 
 ## Rendu attendu
