@@ -19,18 +19,16 @@ Des exmples de code.
 <!--
 
 Le groupe est composé de
-- Prénom du membre 1
-- Prénom du membre 2
-- Prénom du membre 3
-- Prénom du membre 4
+- Lucie
+- Florian
+- Véréna
 
-Nous avons choisi le sujet proposé "XXXXXXXXXX" / un sujet que nous avons proposé "YYYYYYYYY"
+Nous avons choisi un sujet que nous avons proposé "Magazine Tech local"
 
 Voici les fonctionnalités principales attendues :
-- Fonctionnalité A
-- Fonctionnalité B
-- Fonctionnalité C
-- Fonctionnalité D
+- 3 pages
+- Navigation sticky
+- Liens externes précisant les infos
 
 ...
 -->
