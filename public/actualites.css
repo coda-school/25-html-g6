@@ -2,7 +2,7 @@ h1{
     text-align: center;
 }
 
-body{
+main{
     width: 1450px;
     height: auto;
     padding: 20px;
@@ -10,6 +10,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 5px 5px 10px rgb(31, 36, 33);
     background-color: rgb(220, 225, 222);
+    margin-bottom: 2rem;
 }
 
 .bandeau{
@@ -32,4 +33,15 @@ body{
 
 .légende{
     font-size: 0.8rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem;
+}
+
+.block{
+    margin: 1rem;
 }
