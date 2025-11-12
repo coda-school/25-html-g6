@@ -10,27 +10,68 @@ header {
     overflow: hidden;
     background-color: #2B655B;
     color: #E9ECEA;
+    width: auto;
 }
 
-#navbar a {
-    float: left;
+.menu {
+    width: auto;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger-logo {
+    cursor: pointer;
+    background:#204645;
     display: block;
-    text-align: center;
-    width: 30%;
+    color: #E9ECEA;
+    text-align: left;
+    transform: translateX(94%);
     padding: 1%;
 }
 
-#navbar a:hover {
+nav {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    background: black;
+    overflow: hidden;
+    text-align: left;
+}
+
+#hamburger-logo,
+nav {
+    transition: 0.7s;
+}
+
+#hamburger:checked ~ #hamburger-logo,
+#hamburger:checked ~ nav {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    background:#2B655B;
+    padding: 1%;
+
+}
+
+nav a:hover {
     background-color: #204645;
 }
 
-#navbar a:active {
+nav a:active {
     background-color: #BCD3C0;
     color: #1F2421;
 }
 
 a {
     color: #E9ECEA;
+}
+
+p{
+    font-size: xx-large;
 }
 
 footer {
