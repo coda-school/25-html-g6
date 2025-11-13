@@ -1,3 +1,4 @@
+/* --- RESET ET FOND --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,9 +6,7 @@ body {
     background-color: #DCE1DE;
 }
 
-
-
-
+/* --- HEADER --- */
 header {
     background-color: #2B655B;
     color: #E9ECEA;
@@ -58,14 +57,36 @@ header {
 }
 
 
-
-
 main {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
+    align-items:flex-start;
+    gap: 40px;
+    padding: 20px 60px;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+main::after {
+    content: "";
+    display: block;
+    width: 2px;
+    background-color: rgba(43, 101, 91, 0.3);
+    border-radius: 1px;
+    position: absolute;
+    left: 70%;
+    top: 0;
+    bottom: 0;
+}
+
+
+.articles {
+    flex: 0 0 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .section-title {
@@ -79,25 +100,6 @@ main {
     font-weight: bold;
 }
 
-.aside-title {
-    font-size: 40px;
-    color: #2B655B;
-    text-align: left;
-    margin-bottom: 1.5rem;
-    margin-left: 2rem;
-    border-left: 6px 0px solid #49A078;
-    padding-left: 10px;
-    font-weight: bold;
-}
-
-.articles {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width:1000px;
-    
-}
-
 article {
     background-color: #9CC5A1;
     color: #E9ECEA;
@@ -106,7 +108,7 @@ article {
     display: flex;
     gap: 15px;
     align-items: center;
-
+    margin-bottom: 100px;
 }
 
 .article-image img {
@@ -127,7 +129,7 @@ article {
     color: #333;
 }
 
-/* Bouton (lien stylé) */
+/* --- BOUTON --- */
 .btn {
     display: inline-block;
     background-color: #2B655B;
@@ -142,7 +144,47 @@ article {
 }
 
 
+.gallery {
+    flex: 0 0 30%;
+    padding-left: 40px;
+}
 
+.aside-title {
+    font-size: 32px;
+    color: #2B655B;
+    border-left: 6px solid #49A078;
+    padding-left: 12px;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+    gap: 10px;
+}
+
+.gallery-grid a {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
 
 
 footer {
