@@ -6,6 +6,8 @@ body {
 }
 
 
+
+
 header {
     background-color: #2B655B;
     color: #E9ECEA;
@@ -54,6 +56,94 @@ header {
     padding: 10px 20px;
     margin-right: 60px;
 }
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 40px;
+    color: #2B655B;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    border-left: 6px solid #49A078;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.aside-title {
+    font-size: 40px;
+    color: #2B655B;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+    border-left: 6px 0px solid #49A078;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width:1000px;
+    
+}
+
+article {
+    background-color: #9CC5A1;
+    color: #E9ECEA;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.article-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.article-content h3 {
+    font-size: 40px;
+    margin: 0 0 10px;
+    color: #2B655B;
+}
+
+.article-content p {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+/* Bouton (lien stylé) */
+.btn {
+    display: inline-block;
+    background-color: #2B655B;
+    color: #E9ECEA;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #1f4c44;
+}
+
+
+
+
 
 footer {
     background-color: #2B655B;
