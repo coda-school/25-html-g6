@@ -2,11 +2,21 @@ h1{
     text-align: center;
 }
 
+.a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(33, 104, 105);
+}
+
 main{
-    width: 1450px;
+    width: 97%;
     height: auto;
     padding: 20px;
-    border: 4px solid rgb(73, 160, 120);
+    border: 3px solid rgb(73, 160, 120);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 5px 5px 10px rgb(31, 36, 33);
     background-color: rgb(220, 225, 222);
@@ -14,13 +24,13 @@ main{
 }
 
 .bandeau{
-    width: 1430px;
     height: 20px;
     padding: 5px;
     border: 3px solid rgb(73, 160, 120);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 5px 5px 10px rgb(31, 36, 33);
     background-color: rgb(73, 160, 120);
+    justify-content: center;
 }
 
 .text{
@@ -35,7 +45,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .block{
@@ -44,17 +54,22 @@ main{
 }
 
 .title-paragraphe{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 .img1{
-    width: 700px;
-    height: 500px;
+    max-width: 90%;
+    height: auto;
 }
 
 .img2{
-    width: 500px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.img3{
+    max-width: 90%;
+    height: auto;
 }
 
 .img-logo{
@@ -62,32 +77,178 @@ main{
     height: 200px;
 }
 
-@media (max-width: 375px){
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    background-color: #2B655B;
+    color: #E9ECEA;
+    width: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* TODO: Expliquer les changement */
+
+.logodij {
+    height: 50px;
+    width: 50px;
+}
+
+.menu {
+    width: auto;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger-logo {
+    cursor: pointer;
+    background:#204645;
+    display: block;
+    color: #E9ECEA;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    font-size: 200%;
+}
+
+#navi {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: right;
+    font-size: 140%;
+    width: 100%;
+    justify-self: flex-start;
+    display: none;
+}
+
+header:has(#hamburger:checked) #navi {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    background:#2B655B;
+    padding: 1%;
+}
+
+nav a:active {
+    background-color: #BCD3C0;
+    color: #1F2421;
+}
+
+a {
+    color: #E9ECEA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 320px){
     
 main{
-    width: 590px;
+    width: 97%;
     height: auto;
-    margin-right: 1rem;
-    padding: 10px;
+    border: 3px solid rgb(73, 160, 120);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(220, 225, 222);
+}
+
+.bandeau{
+    justify-content: center;
+    height: 8px;
+    padding: 0px;
+    border: 3px solid rgb(73, 160, 120);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 10px rgb(31, 36, 33);
+    background-color: rgb(73, 160, 120);
+    font-size: 0.6rem;
+}
+
+.text{
+    font-size: 0.9rem;
+}
+
+.légende{
+    font-size: 0.8rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block{
+    width: 120%;
+    text-align: justify;
+}
+
+.title-paragraphe{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.img1{
+    max-width: 100%;
+    height: auto;
+}
+
+.img2{
+    max-width: 100%;
+    height: auto;
+}
+
+.img3{
+    max-width: 90%;
+    height: auto;
+}
+
+
+.img-logo{
+    width: 120px;
+    height: 120px;
+}
+
+h1{
+    font-size: 1.4rem;
+}
+}
+
+@media (max-width: 720px){
+
+h1{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+main{
+    width: 97%;
+    height: auto;
+    padding: 20px;
     border: 4px solid rgb(73, 160, 120);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 10px rgb(31, 36, 33);
     background-color: rgb(220, 225, 222);
     margin-bottom: 2rem;
 }
 
 .bandeau{
-    width: 550px;
-    height: 15px;
-    padding: 5px;
+    justify-content: center;
+    height: 10px;
+    padding: 8px;
     border: 3px solid rgb(73, 160, 120);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: 5px 5px 10px rgb(31, 36, 33);
     background-color: rgb(73, 160, 120);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .text{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .légende{
@@ -108,93 +269,33 @@ main{
 
 .title-paragraphe{
     font-size: 1.1rem;
-}
-
-.img1{
-    width: 500px;
-    height: 300px;
-}
-
-.img2{
-    width: 300px;
-    height: 200px;
-}
-
-.img-logo{
-    width: 120px;
-    height: 120px;
-}
-
-h1{
-    font-size: 1.4rem;
-}
-}
-
-@media (max-width: 768px){
-
-h1{
     text-align: center;
-    font-size: 2.2rem;
 }
 
-main{
-    width: 310px;
-    height: auto;
-    padding: 20px;
-    border: 4px solid rgb(73, 160, 120);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 5px 5px 10px rgb(31, 36, 33);
-    background-color: rgb(220, 225, 222);
-    margin-bottom: 2rem;
-}
-
-.bandeau{
-    width: 290px;
-    height: 20px;
-    padding: 5px;
-    border: 3px solid rgb(73, 160, 120);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow: 5px 5px 10px rgb(31, 36, 33);
-    background-color: rgb(73, 160, 120);
-}
-
-.text{
-    font-size: 1.1rem;
-}
-
-.légende{
-    font-size: 0.8rem;
-}
-
-.container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 2rem;
-}
-
-.block{
-    margin: 1rem;
-    text-align: justify;
-}
-
-.title-paragraphe{
-    font-size: 1.1rem;
-}
 
 .img1{
-    width: 300px;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
 }
 
 .img2{
-    width: 500px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
 }
 
+.img3{
+    max-width: 90%;
+    height: auto;
+}
+
+
 .img-logo{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
+}
+
+p{
+    font-size: 0.9rem;
 }
 
 }
