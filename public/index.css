@@ -1,8 +1,12 @@
 body {
-    background-color: #E9ECEA;
+    background:
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url('fondiji.jpg');
     color: #1F2421;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 header {
     position: sticky;
@@ -16,7 +20,6 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-/* TODO: Expliquer les changement */
 
 .logodij {
     height: 50px;
@@ -75,31 +78,39 @@ a {
     font-weight: bold;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(233, 236, 234, 0.4);
+}
+
 #actulu1 {
-    border: red;
+    border: #2B655B;
     border-width: 1%;
     border-style: dashed;
+    justify-content: space-around;
 }
 
 #eventflo {
-    border: red;
+    border: #2B655B;
     border-width: 1%;
     border-style: dashed;
+    text-align: right;
 }
 
 #actulu2 {
-    border: red;
+    border: #2B655B;
     border-width: 1%;
     border-style: dashed;
 }
 
 h1 {
-    font-size: 170%;
+    font-size: 130%;
     margin: 10%;
 }
 
 p{
-    font-size: 150%;
+    font-size: 110%;
     margin: 7%;
 }
 
@@ -108,7 +119,7 @@ footer {
     text-align: center;
     color: #E9ECEA;
     padding: 1%;
-    font-size: 70%;
+    font-size: 76%;
     display: flex;
     flex-direction: row;
 }
