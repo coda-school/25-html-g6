@@ -23,11 +23,6 @@ header {
     width: 50px;
 }
 
-.fonddiji {
-    height: 50%;
-    width: 100%;
-}
-
 .menu {
     width: auto;
 }
@@ -57,11 +52,12 @@ header {
     justify-self: flex-start;
     display: none;
 }
-/* TODO: Expliquer les changement */
+/* changé avec le justify, ajouté de l'espace entre le logo et le menu burger, changé le 'checked' avec :has car ils sont maintenant voisins */
 
-#hamburger:checked ~ header:has(#navi) {
+header:has(#hamburger:checked) #navi {
     display: flex;
 }
+
 nav a {
     display: block;
     background:#2B655B;
