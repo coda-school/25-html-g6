@@ -40,3 +40,13 @@ Couleur actus : #49A078
 Couleur accueil : #358471
 Couleur principale : #2B655B
 Couleur écriture : #1F2421 - #E9ECEA
+
+
+## Mardi 11
+
+Journée en travail seul accause d'un jour ferié.
+En vue de la création la veille du cahier des charges, pas de soucis pour ce travail seul.
+
+## Mercredi 12
+
+Retour en travail de groupe et r

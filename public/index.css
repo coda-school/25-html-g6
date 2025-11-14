@@ -13,7 +13,9 @@ body {
 #page {
     display: flex;
     flex-direction: column;
-    background-color: rgba(233, 236, 234, 0.4);
+    background-color: rgba(233, 236, 234, 0.5);
+    font-size: 100%;
+    padding: 5%
 }
 
 #actulu1 {
@@ -21,6 +23,8 @@ body {
     border-width: 1%;
     border-style: dashed;
     justify-content: space-around;
+    border-radius: 50px;
+    justify-self: flex-end;
 }
 
 #eventflo {
@@ -28,12 +32,14 @@ body {
     border-width: 1%;
     border-style: dashed;
     text-align: right;
+    border-radius: 50px;
 }
 
 #actulu2 {
     border: #2B655B;
     border-width: 1%;
     border-style: dashed;
+    border-radius: 50px;
 }
 
 h1 {

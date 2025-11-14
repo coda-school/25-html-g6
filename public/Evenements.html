@@ -11,7 +11,6 @@
     <!--empêche les problèmes de contenu dupliqué-->
     <link rel="canonical" href="https://www.dijtech.fr/Evenements.html" />
 
-
     <!-- Utile quand pas sur réseaux sociaux -->
     <meta property="og:title" content="Événements – DijTech" />
     <meta property="og:description"
@@ -36,13 +35,15 @@
                     <img src="DijTech..webp" alt="Logo DijTech" height="75" width="75" class="logo-header">
                 </a>
             </div>
+
             <nav class="nav-header" aria-label="Navigation principale">
                 <ul class="nav-ul-header">
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="Evenements.html">Événements</a></li>
+                    <li><a href="Evenements.html" aria-current="page">Événements</a></li>
                     <li><a href="actualites.html">Actualités</a></li>
                 </ul>
             </nav>
+
             <div>
                 <a href="Evenements.html">Français</a> |
                 <a href="Events-en.html">Anglais</a>
@@ -51,13 +52,12 @@
     </header>
 
     <main>
-        <section class="articles">
+        <section class="articles" aria-labelledby="titre-evenements">
 
-            <h2 class="section-title">Événements à venir</h2>
-
+            <h2 class="section-title" id="titre-evenements">Événements à venir</h2>
 
             <!-- Article 1 -->
-            <article>
+            <article aria-labelledby="event1-title" aria-describedby="event1-desc">
                 <div class="article-image">
                     <a href="https://www.holbertonschool.fr/agenda?utm_campaign=Search-DECLA&utm_medium=cpc&utm_source=google&campus=France"
                         target="_blank" rel="noopener noreferrer" data-tooltip="🔗 HTTPS sécurisé">
@@ -66,8 +66,9 @@
                 </div>
 
                 <div class="article-content">
-                    <h3>Live Coding Holberton – tous les mercredis à 18h !</h3>
-                    <p>Participez à une expérience d’apprentissage interactive sur Twitch : codez, échangez et
+                    <h3 id="event1-title">Live Coding Holberton – tous les mercredis à 18h !</h3>
+                    <p id="event1-desc">
+                        Participez à une expérience d’apprentissage interactive sur Twitch : codez, échangez et
                         progressez aux côtés des coachs Holberton.<br>
                         🎥 Disponible aussi en replay sur YouTube.
                     </p>
@@ -78,7 +79,7 @@
             </article>
 
             <!-- Article 2 -->
-            <article>
+            <article aria-labelledby="event2-title" aria-describedby="event2-desc">
                 <div class="article-image">
                     <a href="https://devfest.developers-group-dijon.fr/" target="_blank" rel="noopener noreferrer"
                         data-tooltip="🔗 HTTPS sécurisé">
@@ -98,7 +99,7 @@
             </article>
 
             <!-- Article 3 -->
-            <article>
+            <article aria-labelledby="event3-title" aria-describedby="event3-desc">
                 <div class="article-image">
                     <a href="https://www.linkedin.com/events/le-contextengineering-pouraugme7392548377277919232/"
                         target="_blank" rel="noopener noreferrer" data-tooltip="🔗 HTTPS sécurisé">
@@ -107,8 +108,9 @@
                 </div>
 
                 <div class="article-content">
-                    <h3>Le "Context Engineering" pour augmenter les Agents AI</h3>
-                    <p><strong>Talk de Cédric</strong>, co-fondateur de Packmind, sur le Context Engineering : comment
+                    <h3 id="event3-title">Le "Context Engineering" pour augmenter les Agents AI</h3>
+                    <p id="event3-desc">
+                        <strong>Talk de Cédric</strong>, co-fondateur de Packmind, sur le Context Engineering : comment
                         fournir aux IA un meilleur contexte pour produire du code plus fiable, cohérent et intelligent.
                         <strong>13 janvier à 17h30</strong> – une plongée dans l’avenir du développement assisté par IA.
                     </p>
@@ -119,7 +121,7 @@
             </article>
 
             <!-- Article 4 -->
-            <article>
+            <article aria-labelledby="event4-title" aria-describedby="event4-desc">
                 <div class="article-image">
                     <a href="https://ext.holbertonschool.fr/Vyh8JQjzATiyxipmXVh7?&prefill_Provider=Event&prefill_Events=JPO_Dijon_10%2F12%2F2025&_gl=1*1aia366*_gcl_aw*R0NMLjE3NjMwMTkwMTcuQ2p3S0NBaUFfZERJQmhCNkVpd0F2emMxY0M4VXp0d25JWTRJS0lubFE2anJlWmsyTUtnNWRGR2tlNTcxTFNrSWhydENuZHNNdTBkXy1ob0NjT29RQXZEX0J3RQ..*_gcl_au*ODAxNjcxODYyLjE3NjMwMTg5MjE.*_up*MQ..*_gs*MQ..&gclid=CjwKCAiA_dDIBhB6EiwAvzc1cC8UztwnIY4IKInlQ6jreZk2MKg5dFGke571LSkIhrtCndsMu0d_-hoCcOoQAvD_BwE&gbraid=0AAAAABYPkmlcbIJe2xypk_-fKqnX7Bo55"
                         target="_blank" rel="noopener noreferrer" data-tooltip="🔗 HTTPS sécurisé">
@@ -128,8 +130,9 @@
                 </div>
 
                 <div class="article-content">
-                    <h3>Journées portes ouvertes - Holberton School</h3>
-                    <p>Découvre les formations en développement web et intelligence artificielle, échange avec les
+                    <h3 id="event4-title">Journées portes ouvertes - Holberton School</h3>
+                    <p id="event4-desc">
+                        Découvre les formations en développement web et intelligence artificielle, échange avec les
                         étudiants et explore la pédagogie innovante de Holberton.<br>
                         📅 10 Décembre 2025 – 10h à 17h, Dijon
                     </p>
@@ -140,7 +143,7 @@
             </article>
 
             <!-- Article 5 -->
-            <article>
+            <article aria-labelledby="event5-title" aria-describedby="event5-desc">
                 <div class="article-image">
                     <a href="https://www.linkedin.com/events/codatalk-l-accessibilit-auservi7381263255874199552/"
                         target="_blank" rel="noopener noreferrer" data-tooltip="🔗 HTTPS sécurisé">
@@ -149,8 +152,9 @@
                 </div>
 
                 <div class="article-content">
-                    <h3>L’accessibilité au service de mes tests UI</h3>
-                    <p>Découvrez comment rendre vos tests UI plus efficaces grâce à l’accessibilité !
+                    <h3 id="event5-title">L’accessibilité au service de mes tests UI</h3>
+                    <p id="event5-desc">
+                        Découvrez comment rendre vos tests UI plus efficaces grâce à l’accessibilité !
                         Lors de cette conférence animée par <strong>Marc Bouvier</strong>, vous apprendrez à allier
                         performance
                         inclusion et design. Un événement gratuit et ouvert à tous,
@@ -163,7 +167,7 @@
             </article>
 
             <!-- Article 6 -->
-            <article>
+            <article aria-labelledby="event6-title" aria-describedby="event6-desc">
                 <div class="article-image">
                     <a href="https://www.instagram.com/p/DQezFjViNA3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                         target="_blank" rel="noopener noreferrer" data-tooltip="🔗 HTTPS sécurisé">
@@ -172,8 +176,9 @@
                 </div>
 
                 <div class="article-content">
-                    <h3>Journées Portes Ouvertes - 2025</h3>
-                    <p>📍 À Dijon
+                    <h3 id="event6-title">Journées Portes Ouvertes - 2025</h3>
+                    <p id="event6-desc">
+                        📍 À Dijon
                         Plongez au cœur de notre nouveau campus, situé juste en face de la Toison d’Or, et découvrez nos
                         nouvelles formations en Master pour septembre 2026 en échangeant directement avec nos
                         étudiants.<br>
@@ -187,8 +192,8 @@
 
         </section>
 
-        <aside class="anciens-articles">
-            <h2 class="section-ancien-title">Précédents Événements</h2>
+        <aside class="anciens-articles" aria-labelledby="titre-anciens-evenements">
+            <h2 class="section-ancien-title" id="titre-anciens-evenements">Précédents Événements</h2>
             <div class="container-anciens-articles">
                 <a href="https://lafrenchtechbfc.fr/opportunite/job-dating-alternance-cesi/" target="_blank"
                     data-tooltip="🔗 HTTPS sécurisé">
@@ -225,10 +230,9 @@
             </div>
         </aside>
 
-
     </main>
 
-    <footer id="Footer">
+    <footer id="Footer" role="contentinfo">
         <section class="container-footer">
             <nav class="footer-pages" aria-label="Pages du site">
                 <h2>Pages</h2>
