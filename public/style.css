@@ -9,13 +9,19 @@ header {
     flex-direction: row;
     margin-left: auto;
     background-color: #2B655B;
-    padding: 30px;
+    padding: 20px;
     border-radius: 50px;
-    margin: 50px;
-    color: #E9ECEA;
+    margin: 20px;
     width: auto;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header a {
+    color: #E9ECEA;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .logodij {
@@ -72,6 +78,10 @@ nav a:active {
 
 nav a:hover {
     color: #49A078;
+}
+
+.langu {
+    padding: 15px;
 }
 
 /* FOOTER */
