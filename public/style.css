@@ -7,15 +7,20 @@ header {
     top: 0;
     display: flex;
     flex-direction: row;
-    margin-left: auto;
     background-color: #2B655B;
-    padding: 30px;
+    padding: 20px;
     border-radius: 50px;
-    margin: 50px;
-    color: #E9ECEA;
+    margin: 5px;
     width: auto;
     justify-content: space-between;
     flex-wrap: wrap;
+    overflow: hidden;
+}
+
+header a {
+    color: #E9ECEA;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .logodij {
@@ -74,36 +79,40 @@ nav a:hover {
     color: #49A078;
 }
 
+#langu {
+    padding: 15px;
+}
+
 /* FOOTER */
 
 footer {
     background-color: #2B655B;
     color: #E9ECEA;
-    padding-top: 75px;
-    padding-bottom: 50px;
-    margin-top: 100px;
+    padding: 5%;
+    margin-top: 5%;
 }
 
 .container-footer {
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     text-align: left;
 }
 
 footer h2 {
-    font-size: 30px;
+    font-size: 200%;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
-    font-size: 20px;
+    font-size: 140%;
     line-height: 1.8;
 }
 
 footer a {
     color: #E9ECEA;
-    font-size: 24px;
+    font-size: 100%;
     text-decoration: none;
     transition: color 0.3s;
     line-height: 1.8;
@@ -115,14 +124,14 @@ footer a:hover {
 
 .separate-footer {
     width: 75%;
-    height: 1px;
+    height: 0.2%;
     background-color: #E9ECEA;
-    margin: 2rem auto;
+    margin: 5% auto;
 }
 
 .mention-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 0.9rem;
+    font-size: 120%;
 }

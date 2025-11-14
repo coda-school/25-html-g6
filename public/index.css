@@ -1,4 +1,16 @@
-section {
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+body {
+    background-image: url(fondiji.jpg);
+    background-attachment:local;
+    background-size: cover;
+}
+
+#page {
     display: flex;
     flex-direction: column;
     background-color: rgba(233, 236, 234, 0.4);
@@ -32,11 +44,9 @@ h1 {
 p{
     font-size: 110%;
     margin: 7%;
-}
+} 
 
 a {
-    color: #E9ECEA;
     text-decoration: none;
-    font-weight: bold;
+    color: inherit;
 }
-
