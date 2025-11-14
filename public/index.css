@@ -21,6 +21,7 @@ body {
     border-width: 1%;
     border-style: dashed;
     justify-content: space-around;
+    border-radius: 50px;
 }
 
 #eventflo {
@@ -28,12 +29,14 @@ body {
     border-width: 1%;
     border-style: dashed;
     text-align: right;
+    border-radius: 50px;
 }
 
 #actulu2 {
     border: #2B655B;
     border-width: 1%;
     border-style: dashed;
+    border-radius: 50px;
 }
 
 h1 {
