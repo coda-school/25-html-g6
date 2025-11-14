@@ -1,8 +1,36 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* = RESET CSS = */
+* {
     margin: 0;
     padding: 0;
-    background-color: #DCE1DE;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 header {
@@ -11,7 +39,6 @@ header {
     padding: 30px;
     border-radius: 50px;
     margin: 50px;
-    margin-bottom: 200px;
 }
 
 .container-header {
@@ -67,6 +94,39 @@ main {
     position: relative;
 }
 
+/*
+a[href^="http://"],
+a[href^="https://"]::after {
+  content: "🔗";
+  margin-left: 0.2em;
+}
+
+
+a[href^="http://"]::before {
+  content: "⚠️";
+  margin-right: 0.2em;
+}
+*/
+
+a[data-tooltip] {
+    position: relative; /* nécessaire pour placer le tooltip */
+}
+
+a[data-tooltip]:hover::after {
+    content: attr(data-tooltip); /* affiche le texte du data-tooltip */
+    position: absolute;
+    top: -1.5em; /* au-dessus du lien */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2B655B;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 100;
+}
+
 
 main::after {
     content: "";
@@ -84,18 +144,17 @@ main::after {
 .articles {
     flex: 0 0 60%;
     display: flex;
+    justify-content: left;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
 
 .section-title {
-    font-size: 65px;
+    font-size: 55px;
     color: #2B655B;
-    margin-left: 100px;
     text-align: start;
     margin-bottom: 80px;
-    border-left: 6px solid #49A078;
     padding-left: 10px;
     font-weight: bold;
 }
@@ -157,13 +216,12 @@ article {
     margin-right: 30px;
 }
 
-.section-title {
+.section-ancien-title {
     font-size: 45px;
     color: #2B655B;
-    text-align: left;
+    text-align: center;
     margin-bottom: 100px;
-    margin-left: 1rem;
-    border-left: 6px solid #49A078;
+    margin-left: 60px;
     padding-left: 10px;
     font-weight: bold;
     align-self: flex-start;
@@ -238,7 +296,196 @@ footer a:hover {
     margin: 2rem auto;
 }
 
-.copyright-footer {
-    text-align: center;
+.mention-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     font-size: 0.9rem;
+}
+
+
+
+
+/* = MOBILE FIRST (max 480px) = */
+
+
+header {
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 150px;
+}
+
+.container-header {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo-header {
+    margin-left: 0;
+}
+
+.nav-ul-header {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-ul-header a {
+    font-size: 20px;
+}
+
+#lang {
+    margin-right: 0;
+}
+
+
+main {
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 0px;
+    gap: 40px;
+}
+
+main::after {
+    display: none;
+}
+
+.articles {
+    width: 100%;
+    align-items: center;
+}
+
+.section-title {
+    margin-left: 0;
+    font-size: 35px;
+    text-align: center;
+}
+
+article {
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 50px;
+}
+
+.article-image img {
+    width: 100%;
+    height: auto;
+}
+
+.article-content h3 {
+    font-size: 22px;
+}
+
+.article-content p {
+    font-size: 16px;
+}
+
+
+.anciens-articles {
+    width: 100%;
+    margin: 0;
+}
+
+.section-ancien-title {
+    margin-left: 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+.container-anciens-articles {
+    gap: 30px;
+}
+
+.ancien-img {
+    width: 140px;
+    height: 140px;
+}
+
+
+.container-footer {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+
+
+
+/* = TABLETTES (min-width: 720px) = */
+
+
+@media (min-width: 720px) {
+
+    .header {
+        margin-bottom: 150px;
+    }
+
+    .nav-ul-header {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    main::after {
+        display: block;
+    }
+
+    article {
+        flex-direction: row;
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .article-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .anciens-articles {
+        max-width: 35%;
+    }
+
+    .container-anciens-articles {
+        gap: 50px;
+    }
+
+}
+
+
+
+/* =  DESKTOP LARGE (min 1024px) = */
+
+@media (min-width: 1024px) {
+
+    .header {
+        margin-bottom: 150px;
+    }
+
+    .nav-ul-header {
+        gap: 200px;
+    }
+
+    article {
+        max-width: 800px;
+    }
+
+    .article-image img {
+        width: 225px;
+        height: 225px;
+    }
+
+    .ancien-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+    }
 }
