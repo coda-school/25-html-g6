@@ -2,20 +2,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dijital Dijon - Home/title>
+    <title>Dijital Dijon - Home</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img class="logodij" src="DijTech..webp" alt="Logo Dijital Dijon">
+        <a href="index.html"> <img class="logodij" src="DijTech..webp" alt="Logo Dijital Dijon"> </a>
+        <div id="langu">
+            <a href="index.html">Français</a> |
+            <a href="index-eng.html">English</a>
+        </div>
         <div class="menu">
             <input type="checkbox" id="hamburger">
             <label id="hamburger-logo"
             for="hamburger">☰</label>
         </div>
         <nav id="navi">
-            <a href="#evenement.html"> Events </a>
-            <a href="#actualites.html"> News </a>
+            <a href="Evenements.html"> Événements </a>
+            <a href="actualites.html"> Actualités </a>
             <a href="#contact"> Contact </a>
         </nav>
     </header>
@@ -49,15 +54,53 @@
         </article>
     </section>
 
-    <footer id="contact">
-        <p id="part"> Our partners : <br>
-            <a href="https://www.dijon.fr/"> Official website of Dijon <br><br> </a>
-            <a href="https://lafrenchtechbfc.fr/"> The French Tech of Burgundy <br> </a>
-        </p>
-        <p id="links"> Contact us! <br>
-            <a href="mailto:dijitaldijon@gmail.com"> dijitalDijon@gmail.com <br> </a>
-            <a href="tel:36303630"> 3630 3630 <br> </a>
-        </p>
+    <footer id="Footer">
+        <section class="container-footer">
+            <nav class="footer-pages" aria-label="Pages du site">
+                <h2>Pages</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Evenements.html">Événements</a></li>
+                    <li><a href="Actualite.html">Actualités</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-social" aria-label="Réseaux sociaux">
+                <h2>Suivez-nous</h2>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-contact">
+                <h2>Contactez-nous</h2>
+                <address>
+                    <ul>
+                        <li>Email : <a href="mailto:example@example.com">example@example.com</a></li>
+                        <li>Téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                        <li>Adresse : Paris, France</li>
+                    </ul>
+                </address>
+            </div>
+        </section>
+
+        <div class="separate-footer"></div>
+
+        <div class="mention-footer">
+            <div>
+                <p>&copy; 2024 DijTech. Tous droits réservés.</p>
+            </div>
+            <nav>
+                <a href="https://github.com/coda-school/25-html-g6.git" target="_blank"
+                    data-tooltip="🔗 HTTPS sécurisé">Dépot GitHub</a>
+            </nav>
+            <nav>
+                <a href="https://coda-school.github.io/speedlify-dijon-b1-2025/25-html-g6/" target="_blank"
+                    data-tooltip="🔗 HTTPS sécurisé">Speedlify</a>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>
