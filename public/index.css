@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     line-height: 1.4;
 }
 
 body {
     background-image: url(fondiji.jpg);
-    background-attachment: fixed;
+    background-attachment:local;
+    background-size: cover;
 }
 
 #page {
