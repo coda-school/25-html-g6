@@ -49,4 +49,12 @@ En vue de la création la veille du cahier des charges, pas de soucis pour ce tr
 
 ## Mercredi 12
 
-Retour en travail de groupe et r
+Retour en travail de groupe et mise en commun des premiers éléments (merge branches).
+
+## Jeudi 13
+
+Adaptation du site en responsive.
+
+## Vendredi 14
+
+Concentration sur le ligthouse, réduction de qualité des images et corrections des erreurs.
