@@ -8,10 +8,8 @@
     <meta name="description"
         content="Discover technology events in Dijon: conferences, open days, workshops, and key highlights organized by DijTech and its partners." />
 
-    <!-- Prevent duplicate content issues -->
     <link rel="canonical" href="https://www.dijtech.fr/Events-en.html" />
 
-    <!-- Useful for social sharing -->
     <meta property="og:title" content="Events – DijTech" />
     <meta property="og:description"
         content="Check out all upcoming tech events in Dijon: conferences, workshops, fairs, open days, and presentations." />
@@ -28,18 +26,20 @@
 
 <body>
 
-    <header>
+    <header role="banner">
         <a href="index-eng.html"> <img class="logodij" src="DijTech..webp" alt="Logo Dijital Dijon"> </a>
+
         <div id="langu">
             <a href="Evenements.html">Français</a> |
             <a href="Events-en.html">English</a>
         </div>
+
         <div class="menu">
-            <input type="checkbox" id="hamburger">
-            <label id="hamburger-logo"
-            for="hamburger">☰</label>
+            <input type="checkbox" id="hamburger" aria-controls="navi" aria-expanded="false">
+            <label id="hamburger-logo" for="hamburger" aria-label="Open menu">☰</label>
         </div>
-        <nav id="navi">
+
+        <nav id="navi" aria-label="Main navigation">
             <a href="Evenements.html"> Événements </a>
             <a href="actualites.html"> Actualités </a>
             <a href="#Footer"> Contact </a>
@@ -47,9 +47,9 @@
     </header>
 
     <main>
-        <section class="articles">
+        <section class="articles" aria-labelledby="upcoming-events-title">
 
-            <h2 class="section-title">Upcoming Events</h2>
+            <h2 id="upcoming-events-title" class="section-title">Upcoming Events</h2>
 
             <!-- Article 1 -->
             <article>
@@ -73,7 +73,7 @@
             </article>
 
             <!-- Article 2 -->
-            <article>
+            <article id="DevFest-Accueil">
                 <div class="article-image">
                     <a href="https://devfest.developers-group-dijon.fr/" target="_blank" rel="noopener noreferrer"
                         data-tooltip="🔗 HTTPS secure">
@@ -181,8 +181,8 @@
 
         </section>
 
-        <aside class="anciens-articles">
-            <h2 class="section-ancien-title">Past Events</h2>
+        <aside class="anciens-articles" aria-labelledby="past-events-title">
+            <h2 id="past-events-title" class="section-ancien-title">Past Events</h2>
             <div class="container-anciens-articles">
                 <a href="https://lafrenchtechbfc.fr/opportunite/job-dating-alternance-cesi/" target="_blank"
                     data-tooltip="🔗 HTTPS secure">
@@ -220,7 +220,7 @@
 
     </main>
 
-    <footer id="Footer">
+    <footer id="Footer" role="contentinfo">
         <section class="container-footer">
             <nav class="footer-pages" aria-label="Site pages">
                 <h2>Pages</h2>
