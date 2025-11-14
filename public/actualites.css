@@ -47,6 +47,7 @@ article{
     flex-direction: row;
     align-items: center;
     margin: 1rem;
+    align-items: flex-start;
     /*max-width: 60ch;
     margin: auto;
     column-rule: dotted;*/
@@ -55,6 +56,8 @@ article{
 .block{
     margin: 1rem;
     text-align: justify;
+    flex: 1;
+    box-sizing: border-box;
 }
 
 .img1{
@@ -68,7 +71,7 @@ article{
 }
 
 .img3{
-    max-width: 90%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -189,7 +192,6 @@ article{
 }
 
 .block{
-    margin: 1rem;
     text-align: justify;
 }
 
@@ -204,7 +206,7 @@ article{
 }
 
 .img3{
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
 }
 
