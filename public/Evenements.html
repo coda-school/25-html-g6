@@ -28,27 +28,22 @@
 
 <body>
 
-    <header>
-        <div class="container-header">
-            <div>
-                <a href="#Footer" aria-label="Page d'accueil DijTech">
-                    <img src="DijTech..webp" alt="Logo DijTech" height="75" width="75" class="logo-header">
-                </a>
-            </div>
-
-            <nav class="nav-header" aria-label="Navigation principale">
-                <ul class="nav-ul-header">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="Evenements.html" aria-current="page">Événements</a></li>
-                    <li><a href="actualites.html">Actualités</a></li>
-                </ul>
-            </nav>
-
-            <div>
-                <a href="Evenements.html">Français</a> |
-                <a href="Events-en.html">Anglais</a>
-            </div>
+    <header class="footer-Sticky">
+        <a href="index.html"> <img class="logodij" src="DijTech..webp" alt="Logo Dijital Dijon" > </a>
+        <div id="langu">
+            <a href="Evenements.html">Français</a> |
+            <a href="Events-en.html">English</a>
         </div>
+        <div class="menu">
+            <input type="checkbox" id="hamburger">
+            <label id="hamburger-logo"
+            for="hamburger">☰</label>
+        </div>
+        <nav id="navi" aria-label="Navigation principale">
+            <a href="Evenements.html"> Événements </a>
+            <a href="actualites.html"> Actualités </a>
+            <a href="#Footer"> Contact </a>
+        </nav>
     </header>
 
     <main>

@@ -22,30 +22,28 @@
     <meta http-equiv="Content-Language" content="en" />
     <meta name="theme-color" content="#2B655B" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="Evenement.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="Evenement.css"/>
 </head>
 
 <body>
 
     <header>
-        <div class="container-header">
-            <div>
-                <a href="#Footer" aria-label="DijTech Home Page">
-                    <img src="DijTech..webp" alt="DijTech Logo" height="75" width="75" class="logo-header">
-                </a>
-            </div>
-            <nav class="nav-header" aria-label="Main navigation">
-                <ul class="nav-ul-header">
-                    <li><a href="index-en.html">Home</a></li>
-                    <li><a href="Events-en.html">Events</a></li>
-                    <li><a href="News-en.html">News</a></li>
-                </ul>
-            </nav>
-            <div>
-                <a href="Evenements.html">French</a> |
-                <a href="Events-en.html">English</a>
-            </div>
+        <a href="index-eng.html"> <img class="logodij" src="DijTech..webp" alt="Logo Dijital Dijon"> </a>
+        <div id="langu">
+            <a href="Evenements.html">Français</a> |
+            <a href="Events-en.html">English</a>
         </div>
+        <div class="menu">
+            <input type="checkbox" id="hamburger">
+            <label id="hamburger-logo"
+            for="hamburger">☰</label>
+        </div>
+        <nav id="navi">
+            <a href="Evenements.html"> Événements </a>
+            <a href="actualites.html"> Actualités </a>
+            <a href="#Footer"> Contact </a>
+        </nav>
     </header>
 
     <main>

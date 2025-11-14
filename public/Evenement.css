@@ -41,6 +41,13 @@ button {
     cursor: pointer;
 }
 
+.footer-Sticky {
+    z-index: 1000;
+    margin: 5rem;
+    margin-bottom: 200px;
+}
+
+/*
 header {
     background-color: #2B655B;
     color: #E9ECEA;
@@ -89,7 +96,7 @@ header {
     margin-right: 60px;
 }
 
-
+*/
 
 
 main {
@@ -264,7 +271,7 @@ article {
 
 
 
-
+/*
 footer {
     background-color: #2B655B;
     color: #E9ECEA;
@@ -317,11 +324,11 @@ footer a:hover {
 }
 
 
-
+*/
 
 /* = MOBILE FIRST (max 480px) = */
 
-
+/*
 header {
     margin: 20px 10px;
     padding: 20px;
@@ -351,7 +358,7 @@ header {
     margin-right: 0;
 }
 
-
+*/
 main {
     flex-direction: column;
     padding: 0 10px;
@@ -415,7 +422,7 @@ article {
     height: 140px;
 }
 
-
+/*
 .container-footer {
     flex-direction: row;
     gap: 10px;
@@ -435,11 +442,13 @@ footer a {
 }
 
 
+
 /* = TABLETTES (min-width: 720px) = */
 
 
 @media (min-width: 720px) {
 
+    /*
     .header {
         margin-bottom: 150px;
     }
@@ -448,7 +457,7 @@ footer a {
         flex-direction: row;
         gap: 60px;
     }
-
+ */
     main {
         flex-direction: row;
     }
@@ -484,6 +493,7 @@ footer a {
 
 @media (min-width: 1024px) {
 
+    /*
     .header {
         margin-bottom: 150px;
     }
@@ -491,7 +501,7 @@ footer a {
     .nav-ul-header {
         gap: 200px;
     }
-
+ */
     article {
         max-width: 800px;
     }
@@ -506,10 +516,12 @@ footer a {
         height: 180px;
     }
 
+    /*
     .container-footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         text-align: left;
     }
+*/
 }
