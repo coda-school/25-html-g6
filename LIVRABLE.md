@@ -101,3 +101,21 @@ npx vite public
 # ou si la commande vite est installée globablement
 vite public
 ```
+
+## Validations HTML
+
+
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g6/index-eng.html
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g6/index-eng.html
+
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g6/actualites.html
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g6/actualites.html
+
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g6/Evenements.html
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g6/Evenements.html
+
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g6/
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g6/
+
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g6/actualites-anglais.html
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g6/actualites-anglais.html
