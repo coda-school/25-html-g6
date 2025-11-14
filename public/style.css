@@ -7,11 +7,10 @@ header {
     top: 0;
     display: flex;
     flex-direction: row;
-    margin-left: auto;
     background-color: #2B655B;
     padding: 20px;
     border-radius: 50px;
-    margin: 20px;
+    margin: 5px;
     width: auto;
     justify-content: space-between;
     flex-wrap: wrap;
